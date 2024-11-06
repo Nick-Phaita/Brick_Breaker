@@ -43,10 +43,10 @@ An enhanced version of the classic brick breaker game developed using Python and
 
 ## Power-Ups
    Power-ups drop randomly after breaking bricks:
-      * Expand: Increases paddle width.
-      * Shrink: Decreases paddle width.
-      * Slow: Slows down the ball speed.
-      * Fast: Speeds up the ball.
+   * Expand: Increases paddle width.
+   * Shrink: Decreases paddle width.
+   * Slow: Slows down the ball speed.
+   * Fast: Speeds up the ball.
 
 ## Scoring and Levels
    * Score: Earn 10 points for each brick broken.
