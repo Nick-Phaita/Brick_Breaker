@@ -14,8 +14,8 @@ An enhanced version of the classic brick breaker game developed using Python and
 ## Installation
 1. Clone the repository:
 ``` bash
-git clone https://github.com/your-username/advanced-brick-breaker.git
-cd advanced-brick-breaker
+git clone https://github.com/Nick-Phaita/Brick_Breaker.git
+cd Brick_Breaker
 ```
 
 2. Install dependencies:
@@ -24,22 +24,22 @@ pip install pygame
 ```
 
 3. Add sound files:
-Ensure the sound files hit.wav, break.wav, and powerup.wav are in the same directory as the code file.
+* Ensure the sound files hit.wav, break.wav, and powerup.wav are in the same directory as the code file.
 
 4. Run the game:
 ``` bash
-python brick_breaker.py
+python main.py
 ```
 
 ## Gameplay
-Use the paddle to prevent the ball from falling off the screen, while aiming to break all the bricks.
-Collect power-ups to gain advantages or overcome challenges.
-Advance to the next level by clearing all bricks.
+* Use the paddle to prevent the ball from falling off the screen, while aiming to break all the bricks.
+* Collect power-ups to gain advantages or overcome challenges.
+* Advance to the next level by clearing all bricks.
 
 ## Controls
-Left Arrow Key: Move the paddle left
-Right Arrow Key: Move the paddle right
-Quit: Close the game window or press ESC
+* Left Arrow Key: Move the paddle left
+* Right Arrow Key: Move the paddle right
+* Quit: Close the game window or press ESC
 
 ## Power-Ups
 Power-ups drop randomly after breaking bricks:
