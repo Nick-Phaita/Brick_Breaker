@@ -43,12 +43,12 @@ Quit: Close the game window or press ESC
 
 ## Power-Ups
 Power-ups drop randomly after breaking bricks:
-*Expand: Increases paddle width.
-*Shrink: Decreases paddle width.
-*Slow: Slows down the ball speed.
-*Fast: Speeds up the ball.
+* Expand: Increases paddle width.
+* Shrink: Decreases paddle width.
+* Slow: Slows down the ball speed.
+* Fast: Speeds up the ball.
 
 ## Scoring and Levels
-*Score: Earn 10 points for each brick broken.
-*Levels: Clear all bricks to advance to the next level, which increases the ball speed.
-*Lives: Start with 3 lives; lose one if the ball falls off the screen. Game over when all lives are lost.
+* Score: Earn 10 points for each brick broken.
+* Levels: Clear all bricks to advance to the next level, which increases the ball speed.
+* Lives: Start with 3 lives; lose one if the ball falls off the screen. Game over when all lives are lost.
