@@ -96,6 +96,15 @@ def draw_objects():
     screen.blit(level_text, (SCREEN_WIDTH // 2 - 50, 10))
     pygame.display.flip()
 
+# Function to display Game Over message
+def display_game_over():
+    screen.fill(BLACK)
+    font = pygame.font.Font(None, 74)
+    game_over_text = font.render("Game Over", True, RED)
+    score_text = font.render(f"Final Score: {score}", True, WHITE)
+    screen.blit(game_over_text, (SCREEN_WIDTH // 2 - game_over_text.get_width() // 2, SCREEN_HEIGHT // 2 - 50))
+    screen.blit(score_text, (SCREEN_WIDTH // 2 - score_text.get_width() // 2, SCREEN_HEIGHT // 2 + 50))
+    pygame.display.flip()
 
 # Main game loop
 clock = pygame.time.Clock()
@@ -147,7 +156,8 @@ while running:
         lives -= 1
         ball.x, ball.y = SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2
         if lives == 0:
-            print("Game Over!")
+            display_game_over()  # Display Game Over message
+            pygame.time.delay(2000)  # Delay to show Game Over screen for 2 seconds
             running = False
 
     # Handle powerup falling
@@ -171,8 +181,9 @@ while running:
     # Next level if all bricks are cleared
     if not bricks:
         level += 1
-        ball_speed[0] += 1
-        ball_speed[1] += 1
+        ball_speed[0] += 1 if ball_speed[0] > 0 else -1  # Increase speed while keeping the same direction
+        ball_speed[1] = abs(ball_speed[1]) + 1  # Ensure the ball moves downward at the start of the level
+        ball.x, ball.y = SCREEN_WIDTH // 2 - BALL_RADIUS, SCREEN_HEIGHT // 2  # Reset ball position to center
         bricks = create_bricks()
 
     # Draw everything
